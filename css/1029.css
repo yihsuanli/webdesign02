@@ -1,0 +1,152 @@
+@charset "UTF-8";
+@import url("menu.css");
+
+
+/* CSS Document */
+body{
+	padding:0;
+	margin:0;
+	font-family: Georgia, "Times New Roman", Times, serif, "微軟正黑體", "Microsoft JhengHei", "新細明體", "PMingLiU", "細明體", "MingLiU";
+	background:#2A2A2A;
+	font-size:10px;
+	color:#d8436a;
+}
+
+ul li {list-style-type:none;}
+
+header{
+	position:fixed;
+	width:100%;
+	height:auto;
+	top:0;
+	color:#d8436a;
+	z-index:100;
+	
+	 /*致上固定*/
+	
+	  
+}
+
+main{
+	width:980px;
+	margin:auto;
+	margin-top:70px;
+}/*距離最頂的東西*/
+
+
+
+#ab{
+width:1000px;
+
+
+}
+
+
+	
+	
+
+
+
+.big_box, .small_box{
+	float:left;
+	
+	overflow:hidden;/*當內容氣的部分，一律隱藏*/
+	-webkit-boxsizing:border-box;
+	-moz-box-sizing:border-box;/*因瀏覽器需要，必須寫前綴詞*/
+	box-sizing::border;
+	position:relative;
+}
+
+.big_box{
+	width:100%;
+}
+.small_box{
+	width:50%;
+	height:300px;
+}
+
+
+.big_big p, .small_box p{
+	padding::110px 60px;
+	
+}
+	
+
+	
+
+
+section{
+	text-align:center;
+	padding-top:50px;
+	clear:both;
+	font-size:12px;
+	letter-spacing:3px;
+}
+
+.small_box{
+	width:50%;
+}
+
+#pink{
+	float:left;
+	width:200px;
+	height:200px;
+	
+}
+
+#abc{
+	float:left;
+	padding-top:30px;
+	height:60px;	
+	padding-left:300px;
+	font:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+	letter-spacing:3px;
+	font-size:10px;
+	
+}
+
+.link{
+	display:inline-block;
+	float:right;
+	margin:10px;
+	
+	
+	padding-top:30px;
+	}
+	
+	
+}
+
+#abd{
+	float:left;
+	height:10px;	
+	padding-left:200px;
+	
+	margin-top:0px;
+	font-size:9px;
+}
+
+footer{
+	clear:both;
+	padding:50px;
+	text-align:center;
+}
+
+nav{
+	clean:both;
+	color:#D9426A;
+	position:relative;
+}
+
+.black{
+	position:absolute;
+	height:600px;
+	
+	box-sizing:border-box;
+	background:rgba(255,124,38,0)	
+}
+
+.small_box:hover .black{
+	width:600px;
+	background: rgba(0, 0, 0, 0.3);
+}

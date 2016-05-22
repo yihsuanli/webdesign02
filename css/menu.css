@@ -1,0 +1,62 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+nav ul{
+	padding:0;
+	margin:0;
+	list-style: none;
+}
+
+nav li{
+	float:left;  /* 讓選項都能水平並置*/
+
+	position:relative;  /* 為之後次選單的部分可以定位*/
+	z-index:1000;
+
+}
+nav li a{
+	display:block;
+	height:50px;
+	padding:10px;
+	color:#D9426A;
+	background:#000;
+	text-decoration:none;
+	line-height:50px; /* 讓字可以垂直置中，對應height的值*/
+}
+
+nav li a:hover{
+	color:#fff;
+	background:#000;
+}
+
+nav li ul{
+    position: absolute; /* 讓表單可以對其第一層的設定*/
+    display:none; /* 一開始隱形*/
+    left: 0;    
+    margin: 0;
+}
+	
+nav ul li:hover > ul{ /* 第一層選單滑鼠滑過時，顯示*/
+    display: block;
+}
+
+nav ul ul a{
+    width:200px;
+    padding: 10px;
+    margin:0;   
+    color: #000;        
+    background: #000;
+}
+
+nav ul ul a:hover{
+    color:#fff;     
+    background: #000;
+}
+
+nav ul ul li:hover > ul{
+    display: block; 
+    position: absolute;
+    top: 0; /* 讓表單可以對齊上一層，保持水平*/
+    left: 100%; /* 向右移動上一層的寬度*/
+}
